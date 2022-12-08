@@ -6,6 +6,7 @@ import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -23,15 +24,18 @@ public class Hooks {
         final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
         if (scenario.isFailed()) {
 
-            String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-            TakesScreenshot ts = (TakesScreenshot) Driver.getDriver();
-            File source = ts.getScreenshotAs(OutputType.FILE);
+//            String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+//            TakesScreenshot ts = (TakesScreenshot) Driver.getDriver();
+//            File source = ts.getScreenshotAs(OutputType.FILE);
+//
+//            String target = System.getProperty("user.dir") + "/test-output/Screenshots/" + "failedScreenshot" + date + ".png";
+//            File finalDestination = new File(target);
+//
+//            BufferedImage bufferedImage = ImageIO.read(source);
+//            ImageIO.write(bufferedImage, "png", finalDestination);
 
-            String target = System.getProperty("user.dir") + "/test-output/Screenshots/" + "failedScreenshot" + date + ".png";
-            File finalDestination = new File(target);
-
-            BufferedImage bufferedImage = ImageIO.read(source);
-            ImageIO.write(bufferedImage, "png", finalDestination);
+            System.out.println("aasd");
+            String failed = ReusableMethods.getScreenshotParallel("failed screenshot");
 
             scenario.attach(screenshot, "image/png", "screenshot");
         }

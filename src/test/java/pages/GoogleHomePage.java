@@ -27,6 +27,11 @@ public class GoogleHomePage {
     public void verifyRelatedResults(){
 
         //Assertion might not be healthy
-        Assert.assertTrue(lDriver.getCurrentUrl().contains("search?q=" + getSearchBar().getText()));
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        Assert.assertTrue(lDriver.getCurrentUrl().contains("search?q=123" + getSearchBar().getText()));
     }
 }
