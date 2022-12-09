@@ -37,6 +37,7 @@ public class Hooks {
             System.out.println("aasd");
             String failed = ReusableMethods.getScreenshotParallel("failed screenshot");
 
+            System.out.println("after calisti");
             scenario.attach(screenshot, "image/png", "screenshot");
         }
         Driver.closeDriver();
