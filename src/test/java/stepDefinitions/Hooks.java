@@ -34,7 +34,6 @@ public class Hooks {
 //            BufferedImage bufferedImage = ImageIO.read(source);
 //            ImageIO.write(bufferedImage, "png", finalDestination);
 
-            System.out.println("aasd");
             String failed = ReusableMethods.getScreenshotParallel("failed screenshot");
 
             System.out.println("after calisti");

@@ -32,6 +32,6 @@ public class GoogleHomePage {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        Assert.assertTrue(lDriver.getCurrentUrl().contains("search?q=123" + getSearchBar().getText()));
+        Assert.assertTrue(lDriver.getCurrentUrl().contains("search?q=" + getSearchBar().getText()));
     }
 }
