@@ -4,7 +4,6 @@ Feature: first feature
     Given Browser is open
     When I navigate to Google Home Page
     And I search for "emir"
-    And I wait "3" seconds
     Then I should see search results
 
   Scenario: Google search parallel
