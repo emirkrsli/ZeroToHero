@@ -1,5 +1,5 @@
 package utilities;
-import exceptions.InvalidDriverException;
+import ui.exceptions.InvalidDriverException;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;

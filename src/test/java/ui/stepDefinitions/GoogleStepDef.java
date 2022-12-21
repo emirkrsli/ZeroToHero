@@ -1,11 +1,9 @@
-package stepDefinitions;
+package ui.stepDefinitions;
 
-import exceptions.InvalidDriverException;
+import ui.exceptions.InvalidDriverException;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import pages.GoogleHomePage;
+import ui.pages.GoogleHomePage;
 import utilities.Driver;
 
 public class GoogleStepDef {
