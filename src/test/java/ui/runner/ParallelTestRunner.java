@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
-        tags = "",
+        tags = "@spoti",
         glue = "ui/stepDefinitions",
         features = "src/test/resources/features",
         dryRun = false,
@@ -19,6 +19,10 @@ public class ParallelTestRunner extends AbstractTestNGCucumberTests {
         @Override
         @DataProvider(parallel = true)
         public Object[][] scenarios() {
+
                 return super.scenarios();
+                git
         }
 }
+
+

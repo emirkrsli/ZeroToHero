@@ -1,5 +1,7 @@
 package ui.stepDefinitions;
 
+import io.cucumber.java.Before;
+import org.openqa.selenium.WebDriver;
 import ui.exceptions.InvalidDriverException;
 import io.cucumber.java.After;
 import io.cucumber.java.Scenario;
@@ -13,7 +15,7 @@ import java.io.IOException;
 public class Hooks {
 
 
-    @After
+//    @After
     public void tearDown(Scenario scenario) throws IOException, InvalidDriverException {
 
         final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
