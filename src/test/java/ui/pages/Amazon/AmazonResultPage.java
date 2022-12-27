@@ -19,6 +19,8 @@ public class AmazonResultPage {
         return driver.findElement(product);
     }
 
+    //
+
     public boolean isProductVisible() {
        return  driver.getPageSource().contains("Apple AirPods Pro (2. nesil)");
     }
