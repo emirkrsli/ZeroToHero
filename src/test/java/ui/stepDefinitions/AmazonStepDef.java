@@ -7,13 +7,18 @@ import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import ui.exceptions.InvalidDriverException;
-import ui.pages.AmazonLoginPage;
+import ui.pages.Amazon.*;
 import utilities.Driver;
 
 public class AmazonStepDef {
 
     WebDriver driver;
     AmazonLoginPage amazonPage = new AmazonLoginPage();
+    AmazonHomePage amazonHomePage = new AmazonHomePage();
+    AmazonResultPage amazonResultPage = new AmazonResultPage();
+    AmazonProductPage amazonProductPage = new AmazonProductPage();
+    AmazonBuyAndClosePage amazonBuyAndClosePage = new AmazonBuyAndClosePage();
+
 
     public AmazonStepDef() throws InvalidDriverException {
     }
@@ -39,20 +44,34 @@ public class AmazonStepDef {
 
     @Given("User search for {string}")
     public void user_search_for(String string) {
-
+        amazonHomePage.clickAndSendProductToSearchBox();
     }
     @Then("Verify the result has {string}")
     public void verify_the_result_has(String string) {
+        Assert.assertTrue(amazonResultPage.isProductVisible());
+        amazonResultPage.clickProduct();
+
 
     }
+
     @Then("Add to card")
     public void add_to_card() {
+        amazonProductPage.clickAddToCardButton();
+        amazonProductPage.waitViewCardButton();
+        amazonProductPage.clickViewCardButton();
+    }
+
+
+    @Then("Close the application")
+    public void close_the_application() throws InterruptedException {
+
+        Thread.sleep(2);
+        amazonBuyAndClosePage.hoverDropDownMenu();
+        amazonBuyAndClosePage.clickLogOutButton();
 
     }
-    @Then("Close the application")
-    public void close_the_application() {
-        //driver.close();
-    }
+
+
 
 
 }
