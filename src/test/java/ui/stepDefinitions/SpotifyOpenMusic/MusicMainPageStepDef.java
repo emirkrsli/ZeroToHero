@@ -1,7 +1,6 @@
-package ui.stepDefinitions.BerkaySpotifyOpenMusic;
+package ui.stepDefinitions.SpotifyOpenMusic;
 
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.WebDriver;
 import ui.exceptions.InvalidDriverException;
 import ui.pages.Spotify.SpotifySearchMusicPage;
 import utilities.Driver;
