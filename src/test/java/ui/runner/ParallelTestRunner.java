@@ -21,7 +21,6 @@ public class ParallelTestRunner extends AbstractTestNGCucumberTests {
         public Object[][] scenarios() {
 
                 return super.scenarios();
-                git
         }
 }
 
