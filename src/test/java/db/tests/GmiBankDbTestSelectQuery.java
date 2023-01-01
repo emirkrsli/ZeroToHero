@@ -4,14 +4,10 @@ import org.testng.annotations.Test;
 
 import java.sql.*;
 
-public class GmiBankDbTestQuary {
-
+public class GmiBankDbTestSelectQuery {
 
     private final static String url = "jdbc:postgresql://157.230.48.97:5432/gmibank_db";
-
     private final static String user = "techprodb_user";
-
-
     private final static String password = "Techpro_@126";
 
     @Test
