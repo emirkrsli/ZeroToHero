@@ -2,3 +2,4 @@ target
 jenkins
 src/reports
 test-output
+postgresql-42.5.1.jar
