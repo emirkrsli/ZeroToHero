@@ -1,4 +1,4 @@
-package api.pojo.JSONPlaceHolder;
+package api.pojo.JSONPlaceHolder.GetPojo;
 
 import io.cucumber.core.internal.com.fasterxml.jackson.annotation.JsonProperty;
 

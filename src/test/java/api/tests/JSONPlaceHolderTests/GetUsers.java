@@ -1,7 +1,7 @@
 package api.tests.JSONPlaceHolderTests;
 
 import api.baseURI.JSONPlaceHoldersBaseURI;
-import api.pojo.JSONPlaceHolder.UserPojo;
+import api.pojo.JSONPlaceHolder.GetPojo.UserPojo;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
