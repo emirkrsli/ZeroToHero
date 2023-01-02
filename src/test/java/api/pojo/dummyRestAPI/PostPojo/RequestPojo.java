@@ -1,24 +1,22 @@
-package api.pojo.DummyRestAPI.PostPojo;
+package api.pojo.dummyRestAPI.PostPojo;
 
 import io.cucumber.core.internal.com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Data {
+public class RequestPojo {
     @JsonProperty("name")
     public String name;
     @JsonProperty("salary")
     public String salary;
     @JsonProperty("age")
     public String age;
-    @JsonProperty("id")
-    public int id;
 
-    public Data(){}
-
-    public Data(String name, String salary, String age, int id) {
+    public RequestPojo(String name, String salary, String age) {
         this.name = name;
         this.salary = salary;
         this.age = age;
-        this.id = id;
+    }
+
+    public RequestPojo() {
     }
 
     public String getName() {
@@ -45,11 +43,12 @@ public class Data {
         this.age = age;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    @Override
+    public String toString() {
+        return "RequestPojo{" +
+                "name='" + name + '\'' +
+                ", salary='" + salary + '\'' +
+                ", age='" + age + '\'' +
+                '}';
     }
 }

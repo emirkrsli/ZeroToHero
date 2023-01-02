@@ -1,4 +1,4 @@
-package api.pojo.DummyRestAPI.GetPojo;
+package api.pojo.dummyRestAPI.GetPojo;
 
 import io.cucumber.core.internal.com.fasterxml.jackson.annotation.JsonProperty;
 
