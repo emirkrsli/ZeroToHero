@@ -1,9 +1,7 @@
 package api.tests.dummyRestAPITests;
 
 import api.baseURI.DummyRestAPIBaseURI;
-import api.pojo.DepremPojo;
-import api.pojo.DummyRestAPI.Datum;
-import api.pojo.DummyRestAPI.DummyRestAPIPojo;
+import api.pojo.DummyRestAPI.GetPojo.DummyRestAPIPojo;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
