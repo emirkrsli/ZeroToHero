@@ -1,4 +1,4 @@
-package api.tests.fakeRestAPI;
+package api.tests.fakeRestAPITests;
 
 import api.baseURI.ActivitiesBaseURI;
 import api.pojo.fakeRestAPI.getPojo.ResponsePojo;
