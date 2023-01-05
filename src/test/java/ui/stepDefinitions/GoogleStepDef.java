@@ -10,11 +10,6 @@ public class GoogleStepDef {
     WebDriver driver;
     GoogleHomePage ghp;
 
-    @Given("Browser is open")
-    public void browser_is_open() throws InvalidDriverException {
-        driver = Driver.getDriver();
-    }
-
     @When("I navigate to Google Home Page")
     public void i_navigate_to_google_home_page() {
         driver.get("https://www.google.com");
