@@ -1,7 +1,11 @@
 package ui.stepDefinitions;
 
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.WebDriver;
+import ui.exceptions.InvalidDriverException;
+import utilities.Driver;
 
 public class CommonStepDef {
 
@@ -15,5 +19,10 @@ public class CommonStepDef {
         synchronized (System.out){
             System.out.println(arg0);
         }
+    }
+
+    @Given("Browser is open")
+    public void browser_is_open() throws InvalidDriverException {
+        Driver.getDriver();
     }
 }
