@@ -53,6 +53,7 @@ public class Exampl01Clarusway {
     @Then("Verify button Log out is displayed on the new page.")
     public void verify_button_log_out_is_displayed_on_the_new_page() {
 
+
     }
 
 
