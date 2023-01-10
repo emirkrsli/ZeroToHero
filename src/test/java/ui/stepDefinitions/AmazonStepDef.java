@@ -32,6 +32,7 @@ public class AmazonStepDef {
     }
     @Given("Verify the title has Amazon")
     public void verify_the_title_has_amazon() {
+
         Assert.assertTrue(driver.getTitle().contains("Amazon.com.tr"));
     }
 
