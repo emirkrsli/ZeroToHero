@@ -60,6 +60,7 @@ public class NewJdbcExample09_01_2023 {
         stat.executeUpdate(deleteTable);
         System.out.println("tablo silindi");
 
+
     }
 
 }
